@@ -1,0 +1,26 @@
+
+
+.line{
+    @apply m-3
+}
+
+.line:before {
+    @apply content-[''] h-full absolute left-1 bg-black w-[3px] -translate-y-6
+}
+
+.cycle_background{
+    fill:none;
+    stroke:#ddd;
+}
+
+.cycle_progress{
+    fill:none;
+    stroke: green;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+}
+
+.cycle-text{
+    font-size:3rem;
+    font-weight:bold;
+}
