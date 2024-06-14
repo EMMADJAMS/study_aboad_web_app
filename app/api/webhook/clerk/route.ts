@@ -70,7 +70,7 @@ export async function POST(req: Request) {
     }
     const email = email_addresses[0].email_address
     
-    //await sql`INSERT INTO User (id, email, firstName, lastName, imageUrl, username ) VALUES (${id},${email}, ${first_name}, ${last_name}, ${image_url},${username});`
+    await sql`INSERT INTO "Users" (id, email, firstName, lastname, imageUrl, username) VALUES (${id},${email}, ${first_name}, ${last_name}, ${image_url},${username});`
     
 }
 
